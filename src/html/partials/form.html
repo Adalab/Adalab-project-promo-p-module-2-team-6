@@ -1,0 +1,128 @@
+<form class="form" action="/signup" method="post">
+  <!--DISEÑA-->
+  <fieldset class="design">
+    <div class="design__legend">
+      <i class="fa-regular fa-object-ungroup icon"></i>
+      <p class="design__titledesign">Diseña</p>
+      <i class="fa-solid fa-angle-up collapsible"></i>
+    </div>
+
+    <!--palette blue-->
+
+    <label for="palette" class="palette">Colores</label>
+    <div class="colors">
+      <input id="palette" type="radio" name="palette" />
+      <div class="blue1"></div>
+      <div class="blue1__blue2"></div>
+      <div class="blue1__blue3"></div>
+    </div>
+    <!--palette red-->
+    <div class="colors">
+      <input id="palette" type="radio" name="palette" />
+      <div class="red1"></div>
+      <div class="red1__red2"></div>
+      <div class="red1__red3"></div>
+    </div>
+
+    <!--palette mix-->
+    <div class="colors">
+      <input id="palette" type="radio" name="palette" />
+      <div class="mix1"></div>
+      <div class="mix1__mix2"></div>
+      <div class="mix1__mix3"></div>
+    </div>
+  </fieldset>
+
+  <!--RELLENA-->
+
+  <fieldset class="filled">
+    <div class="filled__legend">
+      <i class="fa-regular fa-keyboard icon"></i>
+      <p class="filled__titlefilled">rellena</p>
+      <i class="fa-solid fa-angle-up collapsible"></i>
+    </div>
+    <label class="firstname" for="name">Nombre completo</label>
+    <input
+      id="name"
+      type="text"
+      name="name"
+      placeholder="Ej: Sally Jill"
+      required
+    />
+    <label class="job" for="job">Puesto</label>
+    <input
+      id="position"
+      type="text"
+      name="job"
+      placeholder="Ej: Front-end unicorn"
+      required
+    />
+    <label class="image" for="image">imagen de perfil</label>
+    <input
+      id="image"
+      type=""
+      name="image"
+      placeholder="Ej: Sally Jill"
+      required
+    />
+    <label class="emailadress" for="email">Email</label>
+    <input
+      id="email"
+      type="email"
+      name="email"
+      placeholder="Ej: sally-hill@gmail.com"
+      required
+    />
+    <label class="phone" for="phone">Teléfono</label>
+    <input
+      id="phonenumber"
+      type="tel"
+      name="phone"
+      placeholder="Ej: 555-555-55"
+      required
+    />
+    <label class="linkedin" for="linkedin">Linkedin</label>
+    <input
+      id="link"
+      type="text"
+      name="linkedin"
+      placeholder="Ej: linkedin.com/in/sally.hill "
+      required
+    />
+    <label class="github" for="github">Github</label>
+    <input
+      id="git"
+      type="text"
+      name="name"
+      placeholder="Ej: @sally-hill"
+      required
+    />
+  </fieldset>
+
+  <!--COMPARTE-->
+
+  <fieldset class="share">
+    <div class="share__legend">
+      <i class="fa-solid fa-share-nodes icon"></i>
+      <p class="share__titleshare">comparte</p>
+      <i class="fa-solid fa-angle-up collapsible"></i>
+    </div>
+
+    <button class="bottom">
+      <img />
+      <p>Crear tarjeta</p>
+    </button>
+
+    <div class="twitter">
+      <p>La tarjeta ha sido creada</p>
+      <link
+        rel="stylesheet"
+        href="https://awesome-profile-card.com?id=A456DF0001"
+      />
+      <button>
+        <img src="" alt="" />
+        <p>Compartir en twitter</p>
+      </button>
+    </div>
+  </fieldset>
+</form>

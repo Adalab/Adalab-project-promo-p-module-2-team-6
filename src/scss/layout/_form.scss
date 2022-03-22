@@ -1,0 +1,147 @@
+.form {
+  background-image: linear-gradient(to bottom, $contentlight, $contentwhite 9%);
+}
+
+.collapsible {
+  font-size: 1.125rem;
+  color: $brandlight;
+}
+.icon {
+  font-size: 1.125rem;
+  color: $brandlight;
+}
+
+//DISEÑA
+
+.design {
+  border-bottom: 1px green solid;
+
+  &__legend {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 27px 20px 22px;
+  }
+
+  &__titledesign {
+    margin-right: 8.5em;
+  }
+}
+
+.palette {
+  margin-top: 22px;
+  margin-left: 39px;
+  font-size: 0.875rem;
+}
+
+.colors {
+  margin-bottom: 20px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/*PALETA DE COLORES*/
+
+.blue1 {
+  width: 30px;
+  height: 25px;
+  background: $branddark;
+
+  &__blue2 {
+    width: 30px;
+    height: 25px;
+    background: $dirty-blue;
+  }
+
+  &__blue3 {
+    width: 30px;
+    height: 25px;
+    background: $hospital-green;
+  }
+}
+
+.red1 {
+  width: 30px;
+  height: 25px;
+  background: $dried-blood;
+
+  &__red2 {
+    width: 30px;
+    height: 25px;
+    background: $rusty-red;
+  }
+  &__red3 {
+    width: 30px;
+    height: 25px;
+    background: $tomato;
+  }
+}
+
+.mix1 {
+  width: 30px;
+  height: 25px;
+  background: $slate;
+
+  &__mix2 {
+    width: 30px;
+    height: 25px;
+    background: $faded-orange;
+  }
+  &__mix3 {
+    width: 30px;
+    height: 25px;
+    background: $light-grey-blue;
+  }
+}
+
+//RELLENA
+
+.filled {
+  border-bottom: 1px violet solid;
+  display: flex;
+  flex-direction: column;
+
+  &__legend {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 27px 20px 22px;
+  }
+
+  &__titlefilled {
+    margin-right: 8.5em;
+  }
+}
+
+//COMPARTE
+
+.share {
+  border-bottom: 1px blue solid;
+  display: flex;
+  flex-direction: column;
+
+  &__legend {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 27px 20px 22px;
+  }
+
+  &__titleshare {
+    margin-right: 8.5em;
+  }
+}
+
+//botones
+
+.twitter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
