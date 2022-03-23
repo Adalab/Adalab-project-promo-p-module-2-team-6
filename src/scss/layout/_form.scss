@@ -14,7 +14,7 @@
 //DISEÑA
 
 .design {
-  border-bottom: 1px green solid;
+  border-bottom: 1px solid $contentmedium;
 
   &__legend {
     text-transform: uppercase;
@@ -101,7 +101,7 @@
 //RELLENA
 
 .filled {
-  border-bottom: 1px violet solid;
+  border-bottom: 1px solid $contentmedium;
   display: flex;
   flex-direction: column;
 
@@ -121,7 +121,7 @@
 //COMPARTE
 
 .share {
-  border-bottom: 1px blue solid;
+  border-bottom: 1px solid $contentmedium;
   display: flex;
   flex-direction: column;
 
