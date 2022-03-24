@@ -1,12 +1,19 @@
 .wrapper {
   height: 100vh;
-  min-height: 552px;
+  min-width: 320px;
+  min-height: 538px;
   background-color: $contentlight;
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: center;
   align-items: center;
+  @include tablet {
+    min-height: 552px;
+  }
+  @include desktop {
+    min-height: 580px;
+  }
 }
 
 .landing {
@@ -80,7 +87,7 @@
   @include tablet {
     position: absolute;
     bottom: 0;
-    margin-bottom: 3.6875rem;
+    margin-bottom: 7.5rem;
   }
 }
 
