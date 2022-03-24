@@ -83,7 +83,7 @@
       color: $branddark;
       margin: 10px 10px 10px 12px;
     }
-    &__button-mail {
+    /*&__button-mail {
       width: 32px;
       height: 32px;
       border-radius: 50%;
@@ -93,8 +93,23 @@
       margin-top: 10px;
       margin-right: 10px;
       margin-bottom: 10px;
-    }
+    }*/
+    &__container-mail {
+      width: 32px;
+      height: 32px;
+      border: solid 2px $brandmedium;
+      border-radius: 50%;
+      margin-top: 10px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      text-align: center;
 
+      &__mail {
+        text-decoration: none;
+        color: $branddark;
+        transform: translateY(15%);
+      }
+    }
     &__container-linkedin {
       width: 32px;
       height: 32px;
