@@ -38,65 +38,73 @@
   <fieldset class="filled">
     <div class="filled__legend">
       <i class="fa-regular fa-keyboard icon"></i>
-      <p class="filled__titlefilled">rellena</p>
+      <p class="filled__title-filled">rellena</p>
       <i class="fa-solid fa-angle-up collapsible"></i>
     </div>
-    <label class="firstname" for="name">Nombre completo</label>
-    <input
-      id="name"
-      type="text"
-      name="name"
-      placeholder="Ej: Sally Jill"
-      required
-    />
-    <label class="job" for="job">Puesto</label>
-    <input
-      id="position"
-      type="text"
-      name="job"
-      placeholder="Ej: Front-end unicorn"
-      required
-    />
-    <label class="image" for="image">imagen de perfil</label>
-    <input
-      id="image"
-      type=""
-      name="image"
-      placeholder="Ej: Sally Jill"
-      required
-    />
-    <label class="emailadress" for="email">Email</label>
-    <input
-      id="email"
-      type="email"
-      name="email"
-      placeholder="Ej: sally-hill@gmail.com"
-      required
-    />
-    <label class="phone" for="phone">Teléfono</label>
-    <input
-      id="phonenumber"
-      type="tel"
-      name="phone"
-      placeholder="Ej: 555-555-55"
-      required
-    />
-    <label class="linkedin" for="linkedin">Linkedin</label>
-    <input
-      id="link"
-      type="text"
-      name="linkedin"
-      placeholder="Ej: linkedin.com/in/sally.hill "
-      required
-    />
-    <label class="github" for="github">Github</label>
-    <input
-      id="git"
-      type="text"
-      name="name"
-      placeholder="Ej: @sally-hill"
-      required
-    />
+    <section class="filled-section">
+      <label class="firstname filled-text" for="name">Nombre completo</label>
+      <input
+        class="box-text"
+        id="name"
+        type="text"
+        name="name"
+        placeholder="Ej: Sally Jill"
+        required
+      />
+      <label class="job filled-text" for="job">Puesto</label>
+      <input
+        class="box-text"
+        id="position"
+        type="text"
+        name="job"
+        placeholder="Ej: Front-end unicorn"
+        required
+      />
+      <label class="image filled-text" for="image">Imagen de perfil</label>
+
+      <div class="button">
+        <label for="image" class="input-orange box-text">Añadir imagen</label>
+
+        <span class="box-image"></span>
+      </div>
+
+      <label class="emailadress filled-text" for="email">Email</label>
+      <input
+        class="box-text"
+        id="email"
+        type="email"
+        name="email"
+        placeholder="Ej: sally-hill@gmail.com"
+        required
+      />
+      <label class="phone filled-text" for="phone">Teléfono</label>
+      <input
+        class="box-text"
+        id="phonenumber"
+        type="tel"
+        name="phone"
+        placeholder="Ej: 555-55-55-55"
+        required
+      />
+      <label class="linkedin filled-text" for="linkedin">Linkedin</label>
+      <input
+        class="box-text"
+        id="link"
+        type="text"
+        name="linkedin"
+        placeholder="Ej: linkedin.com/in/sally.hill "
+        required
+      />
+      <label class="github filled-text" for="github">Github</label>
+      <input
+        class="box-text"
+        id="git"
+        type="text"
+        name="name"
+        placeholder="Ej: @sally-hill"
+        required
+      />
+    </section>
   </fieldset>
 
   <!--COMPARTE-->

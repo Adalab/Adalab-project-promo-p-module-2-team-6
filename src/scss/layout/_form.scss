@@ -15,13 +15,15 @@
 
 .design {
   border-bottom: 1px solid $contentmedium;
+  padding: 10px 0 20px;
+  margin: 0 20px;
 
   &__legend {
     text-transform: uppercase;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 27px 20px 22px;
+    padding: 27px 10px 22px;
   }
 
   &__titledesign {
@@ -31,13 +33,12 @@
 
 .palette {
   margin-top: 22px;
-  margin-left: 39px;
+  margin-left: 19px;
   font-size: 0.875rem;
 }
 
 .colors {
   margin-bottom: 20px;
-  margin-right: 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -101,22 +102,60 @@
 //RELLENA
 
 .filled {
-  padding: 10px 19px 30px 20px;
   border-bottom: 1px solid $contentmedium;
-  display: flex;
-  flex-direction: column;
+  // display: flex;
+  // flex-direction: column;
 
   &__legend {
     text-transform: uppercase;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 27px 20px 22px;
+    margin: 10px 20px 25px 20px;
   }
 
-  &__titlefilled {
+  &__title-filled {
     margin-right: 8.5em;
   }
+}
+
+.filled-section {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px 20px;
+}
+
+.filled-text {
+  font-size: 0.875rem;
+  color: $branddark;
+  margin-top: 10px;
+}
+
+.button {
+  display: flex;
+
+  gap: 20px;
+}
+
+.box-text {
+  height: 30px;
+  border: solid 1px $brandmedium;
+  margin-top: 7px;
+}
+.input-orange {
+  width: 140px;
+  background-color: $brandlight;
+  color: $contentwhite;
+  text-align: center;
+  border-radius: 3px;
+  border: none;
+  padding: 6px;
+}
+.box-image {
+  width: 30px;
+  height: 30px;
+  border: solid 1px $brandmedium;
+  margin-top: 7px;
 }
 
 //COMPARTE
@@ -131,7 +170,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 27px 20px 22px;
+    margin: 10px 20px 25px 20px;
   }
 
   &__titleshare {
