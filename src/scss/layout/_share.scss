@@ -1,70 +1,80 @@
-.share {
+.wrapper-share {
   margin-left: 20px;
   margin-right: 20px;
-  &__container {
-    border-top: 1px solid $contentmedium;
 
-    text-transform: uppercase;
+  .share {
     display: flex;
-    /*justify-content: space-between;*/
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    /*padding: 27px 20px 22px;*/
-    margin-top: 10px;
 
-    &__icon {
-      font-size: 18px;
-      color: $brandlight;
-      text-align: center;
-      margin-top: 13px;
-      margin-right: 12px;
-      margin-bottom: 30px;
-    }
-
-    &__title {
+    &__container {
+      border-top: 1px solid $contentmedium;
       text-transform: uppercase;
-      font-size: 18px;
-      font-weight: 600;
-      color: $contentdark;
-      margin-top: 10px;
-      margin-bottom: 30px;
-    }
-    &__angle {
-      color: $contentdark;
-      transform: translate(173px, -50%);
-    }
-  }
-
-  .button-container {
-    border-bottom: 1px solid $contentmedium;
-
-    &__create {
-      width: 199px;
-      height: 50px;
-      background-color: $brandlight;
-      box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
-      border: none;
-      border-radius: 12px;
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
-      margin-right: 60px;
-      margin-left: 60px;
-      margin-bottom: 30px;
+
+      margin-top: 10px;
 
       &__icon {
-        color: $contentwhite;
-        font-size: 22px;
-        margin-right: 9px;
+        font-size: 18px;
+        color: $brandlight;
+        text-align: center;
+        margin-top: 13px;
+        margin-bottom: 30px;
+        margin-left: 20px;
+        position: relative;
+        left: -140px;
       }
 
       &__title {
         text-transform: uppercase;
-        color: $contentwhite;
         font-size: 18px;
+        font-weight: 600;
+        color: $contentdark;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        position: relative;
+        left: -120px;
+      }
+      &__angle {
+        color: $contentdark;
+        transform: translate(115px, -50%);
+      }
+    }
+
+    .button-container {
+      border-bottom: 1px solid $contentmedium;
+
+      &__create {
+        width: 199px;
+        height: 50px;
+        background-color: $brandlight;
+        box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+        border: none;
+        border-radius: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 60px;
+        margin-left: 60px;
+        margin-bottom: 30px;
+
+        &__icon {
+          color: $contentwhite;
+          font-size: 22px;
+          margin-right: 9px;
+        }
+
+        &__title {
+          text-transform: uppercase;
+          color: $contentwhite;
+          font-size: 18px;
+        }
       }
     }
   }
-
   .done {
     display: flex;
     flex-direction: column;
