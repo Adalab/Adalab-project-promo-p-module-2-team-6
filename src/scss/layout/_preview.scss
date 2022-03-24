@@ -86,17 +86,7 @@
       color: $branddark;
       margin: 10px 10px 10px 12px;
     }
-    /*&__button-mail {
-      width: 32px;
-      height: 32px;
-      border-radius: 50%;
-      border: solid 2px $brandmedium;
-      background-color: transparent;
-      color: $branddark;
-      margin-top: 10px;
-      margin-right: 10px;
-      margin-bottom: 10px;
-    }*/
+
     &__container-mail {
       width: 32px;
       height: 32px;
@@ -124,6 +114,7 @@
       text-align: center;
 
       &__linkedin {
+        color: $branddark;
         transform: translateY(15%);
       }
     }
@@ -139,6 +130,7 @@
       text-align: center;
 
       &__github {
+        color: $branddark;
         transform: translateY(20%);
       }
     }
