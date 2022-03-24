@@ -1,13 +1,22 @@
 .header {
   width: 100%;
-  margin: 0 256px 0 0;
-  padding: 30px 527px 30px 40px;
-  display: flex;
-  /* cuando quiero cambiar la imagen solo se me fue la flechita del comentario ¿como arreglarlo??
+  background: url("../images/logo-awesome-profile-cards.svg") center center
+    no-repeat;
+  background-size: contain;
+  background-position: center center;
+  background-size: 60%;
 
-  .img-awesome {
-    width: 201px;
-    object-fit: contain;
+  height: 111px;
+
+  // Tablet
+  @media all and (min-width: 768px) {
+    background-size: 30%;
+    background-position: left center;
+    margin-left: 40px;
   }
-*/
+  //desktop
+
+  @media all and (min-width: 1200px) {
+    background-size: 13%;
+  }
 }
