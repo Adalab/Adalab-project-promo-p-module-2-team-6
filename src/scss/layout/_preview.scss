@@ -62,13 +62,16 @@
   &__container-img {
     width: 240px;
     height: 200px;
+    background-image: url("../images/profile.jpg");
+    background-size: cover;
+    background-position: center;
     overflow-y: hidden;
 
-    &__profile-image {
+    /*&__profile-image {
       width: 100%;
       object-fit: cover;
       object-position: center center;
-    }
+    }*/
   }
   &__icons {
     color: $branddark;
