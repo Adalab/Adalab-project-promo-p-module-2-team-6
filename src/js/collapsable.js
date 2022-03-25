@@ -1,3 +1,6 @@
 'use strict';
 
-console.log('holis');
+
+const hi ='chao';
+
+console.log(hi);
