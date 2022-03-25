@@ -5,6 +5,10 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+
+  @include tablet {
+    border-radius: 6px;
+  }
 }
 .reset {
   width: 75px;
@@ -62,13 +66,16 @@
   &__container-img {
     width: 240px;
     height: 200px;
+    background-image: url("../images/profile.jpg");
+    background-size: cover;
+    background-position: center;
     overflow-y: hidden;
 
-    &__profile-image {
+    /*&__profile-image {
       width: 100%;
       object-fit: cover;
       object-position: center center;
-    }
+    }*/
   }
   &__icons {
     color: $branddark;
@@ -83,18 +90,23 @@
       color: $branddark;
       margin: 10px 10px 10px 12px;
     }
-    &__button-mail {
+
+    &__container-mail {
       width: 32px;
       height: 32px;
-      border-radius: 50%;
       border: solid 2px $brandmedium;
-      background-color: transparent;
-      color: $branddark;
+      border-radius: 50%;
       margin-top: 10px;
       margin-right: 10px;
       margin-bottom: 10px;
-    }
+      text-align: center;
 
+      &__mail {
+        text-decoration: none;
+        color: $branddark;
+        transform: translateY(15%);
+      }
+    }
     &__container-linkedin {
       width: 32px;
       height: 32px;
@@ -106,6 +118,7 @@
       text-align: center;
 
       &__linkedin {
+        color: $branddark;
         transform: translateY(15%);
       }
     }
@@ -121,6 +134,7 @@
       text-align: center;
 
       &__github {
+        color: $branddark;
         transform: translateY(20%);
       }
     }

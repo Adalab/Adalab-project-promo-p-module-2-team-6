@@ -1,0 +1,39 @@
+.footer {
+  width: 100%;
+  height: 110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  bottom: 0;
+  background-color: $contentwhite;
+
+  .h2 {
+    text-align: center;
+    width: 100%;
+    color: #d8d8d8;
+    font-size: 0.875rem;
+    @include tablet {
+      text-align: left;
+      padding-left: 2.5rem;
+    }
+  }
+  .adalab {
+    width: 105px;
+    margin-top: 0.625rem;
+    @include tablet {
+      margin-top: 0px;
+      padding-right: 2.5rem;
+    }
+  }
+
+  //tablet-desktop
+
+  @include tablet {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 3.75rem;
+  }
+}

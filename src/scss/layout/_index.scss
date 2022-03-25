@@ -1,32 +1,28 @@
-/* MIXINS */
-@mixin tablet {
-  @media all and (min-width: 768px) {
-    @content;
-  }
-}
-
-@mixin desktop {
-  @media all and (min-width: 1200px) {
-    @content;
-  }
-}
-/* LANDING */
 .wrapper {
   height: 100vh;
+  min-width: 320px;
+  min-height: 538px;
   background-color: $contentlight;
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: center;
   align-items: center;
+  @include tablet {
+    min-height: 552px;
+  }
+  @include desktop {
+    min-height: 580px;
+  }
 }
 
 .landing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   &__logo {
-    /* padding-top: 5.9375rem; */
     width: 250px;
     @include tablet {
-      /* padding-top: 21.875rem; */
       width: 60%;
     }
   }
@@ -74,7 +70,6 @@
   }
 }
 
-/* PONER LA CLASE DEL BOTÓN EN EL APARTADO CORRESPONIENTE */
 .button {
   margin-top: 2.4375rem;
   margin-bottom: 1.875rem;
@@ -92,7 +87,7 @@
   @include tablet {
     position: absolute;
     bottom: 0;
-    margin-bottom: 3.6875rem;
+    margin-bottom: 7.5rem;
   }
 }
 
@@ -100,6 +95,6 @@
   color: $brandlight;
   height: 25px;
   width: auto;
-  /* HE TENIDO QUE HACER UN TRANSFORM CHAPUCERO... */
+  /* HE TENIDO QUE HACER UN TRANSFORM... */
   transform: translateY(15px);
 }
