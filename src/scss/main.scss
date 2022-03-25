@@ -1,9 +1,13 @@
 @import "core/variables";
 @import "core/reset";
+@import "core/mediaqueries";
+@import "layout/index";
 @import "layout/header";
-@import "layout/form";
 @import "layout/preview";
 @import "layout/footer";
+@import "layout/share";
+@import "layout/fill";
+@import "layout/design";
 
 body {
   font-family: "Open Sans", sans-serif;

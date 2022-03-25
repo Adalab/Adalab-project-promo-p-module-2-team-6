@@ -1,0 +1,128 @@
+.preview {
+  width: 100%;
+  background-image: linear-gradient(to bottom, #bfcdd0, #dde9ed);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.reset {
+  width: 75px;
+  height: 30px;
+  border-radius: 15px;
+  border: solid 1px #ffffff;
+  background-color: transparent;
+  color: $contentdark;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-top: 38px;
+
+  position: relative;
+  left: -83px;
+
+  &__can {
+    padding-right: 8px;
+  }
+}
+.card {
+  width: 240px;
+  background-color: #ffffff;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  border-radius: 2px;
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.35);
+
+  &__rectangle {
+    width: 5px;
+    height: 42px;
+    background-color: $branddark;
+    position: absolute;
+    transform: translateY(21px);
+
+    margin-left: 0;
+  }
+
+  &__name-surname {
+    font-family: $tertiaryfont;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: $branddark;
+    padding: 21px 14px 4px 20px;
+  }
+
+  &__profession {
+    font-family: $tertiaryfont;
+    font-size: 16px;
+    color: $contentdark;
+    text-transform: capitalize;
+    padding-left: 20px;
+    padding-bottom: 10px;
+  }
+  &__container-img {
+    width: 240px;
+    height: 200px;
+    overflow-y: hidden;
+
+    &__profile-image {
+      width: 100%;
+      object-fit: cover;
+      object-position: center center;
+    }
+  }
+  &__icons {
+    color: $branddark;
+    display: flex;
+
+    &__button-mobile {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      border: solid 2px $brandmedium;
+      background-color: transparent;
+      color: $branddark;
+      margin: 10px 10px 10px 12px;
+    }
+    &__button-mail {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      border: solid 2px $brandmedium;
+      background-color: transparent;
+      color: $branddark;
+      margin-top: 10px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+
+    &__container-linkedin {
+      width: 32px;
+      height: 32px;
+      border: solid 2px $brandmedium;
+      border-radius: 50%;
+      margin-top: 10px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      text-align: center;
+
+      &__linkedin {
+        transform: translateY(15%);
+      }
+    }
+
+    &__container-git {
+      width: 32px;
+      height: 32px;
+      border: solid 2px $brandmedium;
+      border-radius: 50%;
+      margin-top: 10px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      text-align: center;
+
+      &__github {
+        transform: translateY(20%);
+      }
+    }
+  }
+}
