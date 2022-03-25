@@ -1,0 +1,78 @@
+//RELLENA
+
+.filled {
+  border-bottom: 1px solid $contentmedium;
+  // display: flex;
+  // flex-direction: column;
+
+  &__legend {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 20px 25px 20px;
+  }
+
+  &__title-filled {
+    margin-right: 8.5em;
+  }
+}
+
+.filled-section {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px 20px;
+}
+
+.filled-text {
+  font-size: 0.875rem;
+  color: $branddark;
+  margin-top: 10px;
+}
+
+.button {
+  display: flex;
+
+  gap: 20px;
+}
+
+.box-text {
+  height: 30px;
+  border: solid 1px $brandmedium;
+  margin-top: 7px;
+}
+.input-orange {
+  width: 140px;
+  background-color: $brandlight;
+  color: $contentwhite;
+  text-align: center;
+  border-radius: 3px;
+  border: none;
+  padding: 6px;
+}
+.box-image {
+  width: 30px;
+  height: 30px;
+  border: solid 1px $brandmedium;
+  margin-top: 7px;
+}
+
+//COMPARTE
+
+.share {
+  border-bottom: 1px solid $contentmedium;
+  display: flex;
+  flex-direction: column;
+
+  &__legend {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 20px 25px 20px;
+  }
+
+  &__titleshare {
+    margin-right: 8.5em;
+  }
+}
