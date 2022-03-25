@@ -12,23 +12,10 @@
       align-items: center;
       padding: 27px 20px 22px 20px;
 
-      /*border-top: 1px solid $contentmedium;
-    text-transform: uppercase;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    margin-top: 10px;*/
-
       &__icon {
         font-size: 18px;
         color: $brandlight;
         text-align: center;
-        /*margin-top: 13px;
-      margin-bottom: 30px;
-      margin-left: 20px;
-      position: relative;
-      left: -140px;*/
       }
 
       &__title {
@@ -37,19 +24,13 @@
         font-weight: 600;
         color: $contentdark;
         margin-right: 8.5em;
-        /*margin-top: 10px;
-      margin-bottom: 30px;
-      position: relative;
-      left: -120px;*/
       }
       &__angle {
         color: $contentdark;
-        /*transform: translate(115px, -50%);*/
       }
     }
-
     .button-container {
-      border-bottom: 1px solid $contentmedium;
+      /*border-bottom: 1px solid $contentmedium;*/
 
       &__create {
         width: 199px;
@@ -112,7 +93,6 @@
       justify-content: center;
       align-items: center;
       margin-bottom: 30px;
-      /*padding: 3px 9px 6px 10.5px;*/
 
       &__icon {
         color: $contentwhite;

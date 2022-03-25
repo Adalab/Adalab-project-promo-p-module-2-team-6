@@ -47,15 +47,23 @@
     margin-left: 0;
   }
 
-  &__name-surname {
+  &__names-container {
     font-family: $tertiaryfont;
     font-size: 18px;
     font-weight: bold;
     text-transform: capitalize;
     color: $branddark;
+    display: flex;
+    flex-direction: row;
     padding: 21px 14px 4px 20px;
-  }
+    gap: 5px;
 
+    &__name {
+    }
+
+    &__lastname {
+    }
+  }
   &__profession {
     font-family: $tertiaryfont;
     font-size: 16px;
