@@ -90,9 +90,7 @@
       border-radius: 50%;
       border: solid 2px $brandmedium;
       border-radius: 50%;
-      margin-top: 10px;
-      margin-right: 10px;
-      margin-bottom: 10px;
+      margin: 10px 10px 10px 20px;
       text-align: center;
 
       &__mobile {
@@ -107,7 +105,7 @@
       height: 32px;
       border: solid 2px $brandmedium;
       border-radius: 50%;
-      margin-top: 10px 10px 10px 20px;
+      margin: 10px 10px 10px 0;
       text-align: center;
 
       &__mail {
@@ -135,7 +133,7 @@
       height: 32px;
       border: solid 2px $brandmedium;
       border-radius: 50%;
-      margin-top: 10px 10px 10px 0;
+      margin: 10px 10px 10px 0;
       text-align: center;
 
       &__github {
