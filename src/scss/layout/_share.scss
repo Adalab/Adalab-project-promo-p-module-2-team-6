@@ -1,7 +1,4 @@
 .wrapper-share {
-  margin-left: 20px;
-  margin-right: 20px;
-
   .share {
     display: flex;
     flex-direction: column;
@@ -9,22 +6,21 @@
     align-items: center;
 
     &__container {
-      border-top: 1px solid $contentmedium;
-      text-transform: uppercase;
+      width: 100%;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-top: 10px;
+      padding: 27px 20px 22px 20px;
 
       &__icon {
         font-size: 18px;
         color: $brandlight;
         text-align: center;
-        margin-top: 13px;
-        margin-bottom: 30px;
-        margin-left: 20px;
-        position: relative;
-        left: -140px;
+        /*margin-top: 13px;
+      margin-bottom: 30px;
+      margin-left: 20px;
+      position: relative;
+      left: -140px;*/
       }
 
       &__title {
@@ -32,14 +28,15 @@
         font-size: 18px;
         font-weight: 600;
         color: $contentdark;
-        margin-top: 10px;
-        margin-bottom: 30px;
-        position: relative;
-        left: -120px;
+        margin-right: 8.5em;
+        /*margin-top: 10px;
+      margin-bottom: 30px;
+      position: relative;
+      left: -120px;*/
       }
       &__angle {
         color: $contentdark;
-        transform: translate(115px, -50%);
+        /*transform: translate(115px, -50%);*/
       }
     }
 

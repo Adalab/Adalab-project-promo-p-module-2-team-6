@@ -1,0 +1,10 @@
+.createwrapper {
+  background-image: linear-gradient(to bottom, $contentlight, $contentwhite 9%);
+  @include tablet {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+
+    padding: 23px 40px 14px 20px;
+  }
+}
