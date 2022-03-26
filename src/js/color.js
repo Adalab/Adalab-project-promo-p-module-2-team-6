@@ -5,7 +5,7 @@ const paletteBlue = document.querySelector ('.js_button_paletteBlue');
 const paletteRed = document.querySelector ('.js_button_paletteRed');
 const paletteMix = document.querySelector ('.js_button_paletteMix');
 //contantescampos a rellenar
-const nameAndLastname = document.querySelector('.js_names-container');
+const nameAndLastname = document.querySelector('.js_cardNames');
 const profession =document.querySelector ('.js_card__profession');
 //constantes item rectangulo
 const elementRectangle = document.querySelector ('.js_card__rectangle');
