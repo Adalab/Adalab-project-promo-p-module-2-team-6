@@ -47,22 +47,14 @@
     margin-left: 0;
   }
 
-  &__names-container {
+  &__names {
     font-family: $tertiaryfont;
     font-size: 18px;
     font-weight: bold;
     text-transform: capitalize;
     color: $branddark;
-    display: flex;
-    flex-direction: row;
     padding: 21px 14px 4px 20px;
     gap: 5px;
-
-    &__name {
-    }
-
-    &__lastname {
-    }
   }
   &__profession {
     font-family: $tertiaryfont;
