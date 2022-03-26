@@ -40,7 +40,7 @@
   &__rectangle {
     width: 5px;
     height: 42px;
-    background-color: $branddark;
+    background-color: $dirty-blue;
     position: absolute;
     transform: translateY(21px);
 
@@ -142,8 +142,4 @@
       }
     }
   }
-}
-
-.newColor {
-  color: $dried-blood;
 }

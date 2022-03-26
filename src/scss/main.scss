@@ -14,3 +14,67 @@
 body {
   font-family: "Open Sans", sans-serif;
 }
+
+.hidden {
+  display: none;
+}
+
+.turn {
+  transform: rotate(180deg);
+}
+.branddark {
+  color: $branddark;
+}
+
+.branddark-background {
+  background-color: $branddark;
+}
+.brandmedium-border {
+  border: solid 2px $brandmedium;
+}
+
+.dirty-blue {
+  color: $dirty-blue;
+}
+.hospital-green {
+  color: $hospital-green;
+}
+.dried-blood {
+  color: $dried-blood;
+}
+
+.rusty-red {
+  color: $rusty-red;
+}
+.rusty-red-background {
+  background-color: $rusty-red;
+}
+
+.tomato {
+  color: $tomato;
+}
+
+.tomato-border {
+  border: 2px solid $tomato;
+}
+.slate {
+  color: $slate;
+}
+
+.slate-background {
+  background-color: $slate;
+}
+.faded-orange {
+  color: $faded-orange;
+}
+
+.faded-orange-background {
+  background-color: $faded-orange;
+}
+.light-grey-blue {
+  color: $light-grey-blue;
+}
+
+.light-grey-blue-border {
+  border: 2px solid $light-grey-blue;
+}
