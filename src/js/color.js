@@ -5,8 +5,8 @@ const paletteBlue = document.querySelector ('.js_button_paletteBlue');
 const paletteRed = document.querySelector ('.js_button_paletteRed');
 const paletteMix = document.querySelector ('.js_button_paletteMix');
 //contantescampos a rellenar
-const nameAndLastname = document.querySelector('.js_cardNames');
-const profession =document.querySelector ('.js_card__profession');
+const nameAndLastname = document.querySelector('.js-namesCard');
+const profession =document.querySelector ('.js-cardProfession');
 //constantes item rectangulo
 const elementRectangle = document.querySelector ('.js_card__rectangle');
 // constantes iconos
@@ -92,10 +92,6 @@ function colorChangeMix() {
 }
 
 
-function handleClick (){
-    
-
-}
 
      paletteRed.addEventListener ('click' , colorChangeRed);
      //click palette blue
