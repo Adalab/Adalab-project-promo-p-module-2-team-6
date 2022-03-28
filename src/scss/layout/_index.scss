@@ -12,7 +12,7 @@
     min-height: 552px;
   }
   @include desktop {
-    min-height: 858px;
+    min-height: 580px;
   }
 }
 
@@ -26,7 +26,6 @@
       width: 60%;
     }
   }
-
   &__title {
     padding-top: 2.2125rem;
     color: $brandlight;
@@ -61,7 +60,6 @@
       width: 20.3125rem;
       height: 5.375rem;
     }
-
     &--li {
       display: flex;
       flex-direction: column;
@@ -69,7 +67,6 @@
     }
   }
 }
-
 .button {
   margin-top: 2.4375rem;
   margin-bottom: 1.875rem;
@@ -85,13 +82,12 @@
   text-decoration: none;
   text-transform: uppercase;
   @include tablet {
-    position: absolute;
-    bottom: 0;
-    margin-bottom: 7.5rem;
-    margin-top: 500px;
+    /* position: absolute;
+    bottom: 0; */
+    /* margin-bottom: 7.5rem; */
+    margin-top: 40vh;
   }
   @include desktop {
-    margin-top: 600px;
   }
 }
 
