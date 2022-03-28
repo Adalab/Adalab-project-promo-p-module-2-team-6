@@ -13,14 +13,14 @@ const elementRectangle = document.querySelector ('.js_card__rectangle');
 const iconMobile = document.querySelector ('.js_iconMobile');
 const iconMail =document.querySelector('.js_iconMail');
 const iconLinkedIn = document.querySelector ('.js_iconLinkedIn');
-const iconGit = document.querySelector ('.js_iconGit')
+const iconGit = document.querySelector ('.js_iconGit');
 //contantes container iconos
 const containerMobile = document.querySelector ('.js_containerMobile');
 const containerMail = document.querySelector ('.js_containerMail');
 const containerLinkedIn = document.querySelector ('.js_containerLinkedIn');
 const containerGit = document.querySelector ('.js_containerGit');
 //contante Crear Tarjeta
-const doneCard = document.querySelector ('.js-done')
+const doneCard = document.querySelector ('.js-done');
 
 doneCard.classList.add('hidden');
 
