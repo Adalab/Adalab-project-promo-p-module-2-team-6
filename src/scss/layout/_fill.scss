@@ -2,15 +2,13 @@
 
 .filled {
   border-bottom: 1px solid $contentmedium;
-  // display: flex;
-  // flex-direction: column;
 
   &__legend {
     text-transform: uppercase;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 10px 20px 25px 20px;
+    margin: 27px 20px 25px 20px;
   }
 
   &__title-filled {
