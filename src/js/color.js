@@ -20,7 +20,7 @@ const containerMail = document.querySelector ('.js_containerMail');
 const containerLinkedIn = document.querySelector ('.js_containerLinkedIn');
 const containerGit = document.querySelector ('.js_containerGit');
 //contante Crear Tarjeta
-const doneCard = document.querySelector ('.js-done');
+const doneCard = document.querySelector ('.js-share__wrapper2');
 
 doneCard.classList.add('hidden');
 

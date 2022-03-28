@@ -20,26 +20,13 @@ const shareTriangle = document.querySelector('.js-share__triangle');
 function handleArrowS(){
 shareWrapper.classList.toggle('hidden');
 shareWrapper2.classList.toggle('hidden');
+designWrapper.classList.add('hidden');
+fillWrapper.classList.add('hidden');
 /* shareTriangle.classList.toggle('turn'); */
 }
+
 shareLegend.addEventListener('click', handleArrowS);
 
-//-------- fill-----------
-function handleArrowF(){
-fillWrapper.classList.toggle('hidden');
-/* fillTriangle.classList.toggle('turn'); */
-}
-fillLegend.addEventListener('click', handleArrowF);
-
-
-//-------- design-----------
-function handleArrowD(){
-designWrapper.classList.toggle('hidden');
-/* designTriangle.classList.toggle('turn'); */
-}
-designLegend.addEventListener('click', handleArrowD);
-
-//------general
 if (shareWrapper2.classList.contains('hidden')){
     console.log(yeah);
     shareTriangle.classList.add('turn');
@@ -47,3 +34,24 @@ if (shareWrapper2.classList.contains('hidden')){
 else {
     shareTriangle.classList.remove('turn');
 };
+
+//-------- fill-----------
+function handleArrowF(){
+fillWrapper.classList.toggle('hidden');
+designWrapper.classList.add('hidden');
+shareWrapper.classList.add('hidden');
+shareWrapper2.classList.add('hidden');
+fillTriangle.classList.toggle('turn');
+}
+fillLegend.addEventListener('click', handleArrowF);
+
+
+//-------- design-----------
+function handleArrowD(){
+designWrapper.classList.toggle('hidden');
+designTriangle.classList.toggle('turn');
+shareWrapper.classList.add('hidden');
+shareWrapper2.classList.add('hidden');
+fillWrapper.classList.add('hidden');
+}
+designLegend.addEventListener('click', handleArrowD);

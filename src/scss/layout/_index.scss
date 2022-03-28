@@ -12,7 +12,7 @@
     min-height: 552px;
   }
   @include desktop {
-    min-height: 580px;
+    min-height: 858px;
   }
 }
 
@@ -88,6 +88,10 @@
     position: absolute;
     bottom: 0;
     margin-bottom: 7.5rem;
+    margin-top: 500px;
+  }
+  @include desktop {
+    margin-top: 600px;
   }
 }
 

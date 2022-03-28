@@ -60,6 +60,7 @@
     }
   }
 }
+
 .done {
   display: flex;
   flex-direction: column;
@@ -104,5 +105,8 @@
       color: $contentwhite;
       font-size: 14px;
     }
+  }
+  .disapear {
+    display: none;
   }
 }

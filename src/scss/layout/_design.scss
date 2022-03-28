@@ -1,7 +1,7 @@
 .design {
   border-bottom: 1px solid $contentmedium;
-  padding: 10px 0 20px;
-  margin: 0 20px;
+  padding: 27px 20px 22px 20px;
+  //margin: 0 20px;
 
   &__legend {
     text-transform: uppercase;
@@ -13,6 +13,9 @@
 
   &__titledesign {
     margin-right: 8.5em;
+    font-size: 18px;
+    font-weight: 600;
+    color: $contentdark;
   }
 }
 
