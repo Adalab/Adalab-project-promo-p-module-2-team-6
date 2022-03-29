@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/b408cf2790.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- style -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <title>Awesome profile-cards</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <a href="../index.html" title="ir al inicio">
+        <div class="header__link"></div
+      ></a>
+    </header>
+
+    <div class="createwrapper">
+      <article class="preview">
+        <button class="reset" type="reset">
+          <i class="fa-solid fa-trash-can reset__can"></i>Reset
+        </button>
+
+        <div class="card">
+          <div class="card__rectangle js_card__rectangle"></div>
+
+          <h2 class="card__names js-namesCard">nombre apellido</h2>
+
+          <h3 class="card__profession js-cardProfession">profesión</h3>
+
+          <div class="card__container-img"></div>
+          <nav class="card__icons">
+            <!--<button class="card__icons__button-mobile js_button-mobile">
+              <i class="fa-solid fa-mobile-screen-button"></i>
+            </button>-->
+
+            <div class="card__icons__container-mobile js_containerMobile">
+              <a href="" target="_blank"
+                ><i
+                  class="fa-solid fa-mobile-screen-button class card__icons__container-mobile__mobile js_iconMobile"
+                ></i
+              ></a>
+            </div>
+
+            <div class="card__icons__container-mail js_containerMail">
+              <a href="mailto:hola@adalab.es" target="_blank"
+                ><i
+                  class="fa-solid fa-envelope card__icons__container-mail__mail js_iconMail"
+                ></i
+              ></a>
+            </div>
+            <div class="card__icons__container-linkedin js_containerLinkedIn">
+              <a
+                href="https://www.linkedin.com/school/adalab/?originalSubdomain=es"
+                target="_blank"
+                ><i
+                  class="fa-brands fa-linkedin-in card__icons__container-linkedin__linkedin js_iconLinkedIn"
+                ></i
+              ></a>
+            </div>
+            <div class="card__icons__container-git js_containerGit">
+              <a href="https://github.com/Adalab/" target="_blank"
+                ><i
+                  class="fa-brands fa-github-alt card__icons__container-git__github js_iconGit"
+                ></i
+              ></a>
+            </div>
+          </nav>
+        </div>
+      </article>
+
+      <form class="form" action="/signup" method="post">
+        <fieldset class="design">
+          <div class="design__legend js-design">
+            <i class="fa-regular fa-object-ungroup icon"></i>
+            <p class="design__titledesign">Diseña</p>
+            <i class="fa-solid fa-angle-up collapsible js-design__triangle"></i>
+          </div>
+
+          <!--palette blue-->
+          <div class="hidden js-design__wrapper">
+            <label for="palette" class="palette">Colores</label>
+            <div class="colors js_colorBlue">
+              <input
+                class="js_button_paletteBlue"
+                id="palette"
+                type="radio"
+                name="palette"
+              />
+              <div class="blue1"></div>
+              <div class="blue1__blue2"></div>
+              <div class="blue1__blue3"></div>
+            </div>
+            <!--palette red-->
+            <div class="colors js_colorRed">
+              <input
+                class="js_button_paletteRed"
+                id="palette"
+                type="radio"
+                name="palette"
+              />
+              <div class="red1"></div>
+              <div class="red1__red2"></div>
+              <div class="red1__red3"></div>
+            </div>
+
+            <!--palette mix-->
+            <div class="colors js_colorsMix">
+              <input
+                class="js_button_paletteMix"
+                id="palette"
+                type="radio"
+                name="palette"
+              />
+              <div class="mix1"></div>
+              <div class="mix1__mix2"></div>
+              <div class="mix1__mix3"></div>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="filled">
+          <div class="filled__legend js-filled">
+            <i class="fa-regular fa-keyboard icon"></i>
+            <p class="filled__title-filled">rellena</p>
+            <i class="fa-solid fa-angle-up collapsible js-fill__triangle"></i>
+          </div>
+          <section class="filled-section hidden js-filled__wrapper">
+            <label class="firstname filled-text" for="name">Nombre completo</label>
+            <input
+              class="box-text js-inputNames"
+              id="name"
+              type="text"
+              name="name"
+              placeholder="Ej: Sally Jill"
+              required
+            />
+            <label class="job filled-text" for="job">Puesto</label>
+            <input
+              class="box-text js-inputProfession"
+              id="position"
+              type="text"
+              name="job"
+              placeholder="Ej: Front-end unicorn"
+              required
+            />
+            <label class="image filled-text" for="image">Imagen de perfil</label>
+
+            <div class="filled-button">
+              <label for="image" class="input-orange box-text">Añadir imagen</label>
+
+              <span class="box-image"></span>
+            </div>
+
+            <label class="emailadress filled-text" for="email">Email</label>
+            <input
+              class="box-text"
+              id="email"
+              type="email"
+              name="email"
+              placeholder="Ej: sally-hill@gmail.com"
+              required
+            />
+            <label class="phone filled-text" for="phone">Teléfono</label>
+            <input
+              class="box-text"
+              id="phonenumber"
+              type="tel"
+              name="phone"
+              placeholder="Ej: 555-55-55-55"
+              required
+            />
+            <label class="linkedin filled-text" for="linkedin">Linkedin</label>
+            <input
+              class="box-text"
+              id="link"
+              type="text"
+              name="linkedin"
+              placeholder="Ej: linkedin.com/in/sally.hill "
+              required
+            />
+            <label class="github filled-text" for="github">Github</label>
+            <input
+              class="box-text"
+              id="git"
+              type="text"
+              name="name"
+              placeholder="Ej: @sally-hill"
+              required
+            />
+          </section>
+        </fieldset>
+
+        <fieldset class="wrapper-share">
+          <div class="share">
+            <div class="share__container js-share">
+              <i class="fa-solid fa-share-nodes share__container__icon"></i>
+              <p class="share__container__title">comparte</p>
+              <i
+                class="fa-solid fa-angle-up share__container__angle js-share__triangle"
+              ></i>
+            </div>
+            <div class="button-container hidden js-share__wrapper">
+              <button class="button-container__create">
+                <i class="fa-solid fa-address-card button-container__create__icon"></i>
+                <p class="button-container__create__title">Crear tarjeta</p>
+              </button>
+            </div>
+          </div>
+
+          <div class="done disapear">
+            <p class="done__title">La tarjeta ha sido creada:</p>
+            <a class="done__link" href="">https://link tarjeta creada</a>
+
+            <button class="done__button-twitter">
+              <i class="fa-brands fa-twitter done__button-twitter__icon"></i>
+              <p class="done__button-twitter__content">Compartir en twitter</p>
+            </button>
+          </div>
+        </fieldset>
+
+      </form>
+    </div>
+
+    <footer>
+      <div class="footer">
+        <h2 class="h2">Awesome profile-cards @2018</h2>
+
+        <img
+          class="adalab"
+          src="./assets/images/logo-adalab.png"
+          alt="logo adalab"
+        />
+      </div>
+    </footer>
+
+    <script type="text/javascript" src="./assets/js/main.js"></script>
+  </body>
+</html>
