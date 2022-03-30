@@ -99,3 +99,7 @@ function colorChangeMix() {
        //click palette Mix
     paletteMix.addEventListener ('click' , colorChangeMix);
     //click palette Red
+
+
+
+    SOY UN TEXTO DE LA RAMMA
