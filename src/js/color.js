@@ -20,9 +20,9 @@ const containerMail = document.querySelector ('.js_containerMail');
 const containerLinkedIn = document.querySelector ('.js_containerLinkedIn');
 const containerGit = document.querySelector ('.js_containerGit');
 //contante Crear Tarjeta
-const doneCard = document.querySelector ('.js-done')
+//const doneCard = document.querySelector ('.js-done')
 
-doneCard.classList.add('hidden');
+//doneCard.classList.add('hidden');
 
 // function change color to palette red
 function colorChangeRed () {
