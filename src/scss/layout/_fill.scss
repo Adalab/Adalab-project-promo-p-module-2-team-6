@@ -2,6 +2,8 @@
 
 .filled {
   border-bottom: 1px solid $contentmedium;
+  cursor: pointer;
+
 
   &__legend {
     text-transform: uppercase;
