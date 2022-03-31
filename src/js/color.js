@@ -20,9 +20,9 @@ const containerMail = document.querySelector ('.js_containerMail');
 const containerLinkedIn = document.querySelector ('.js_containerLinkedIn');
 const containerGit = document.querySelector ('.js_containerGit');
 //contante Crear Tarjeta
-const doneCard = document.querySelector ('.js-share__wrapper2');
+//const doneCard = document.querySelector ('.js-share__wrapper2');
 
-doneCard.classList.add('hidden');
+//doneCard.classList.add('hidden');
 
 // function change color to palette red
 function colorChangeRed () {
@@ -63,7 +63,7 @@ function colorChangeBlue() {
     containerMail.classList.add ('brandmedium-border');
     containerLinkedIn.classList.add ('brandmedium-border');
     containerGit.classList.add ('brandmedium-border');
-    
+ 
     }
 
         
@@ -94,6 +94,7 @@ function colorChangeMix() {
 
 
      paletteRed.addEventListener ('click' , colorChangeRed);
+     console.loh("hola");
      //click palette blue
      paletteBlue.addEventListener ('click' , colorChangeBlue);
        //click palette Mix

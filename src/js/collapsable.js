@@ -24,8 +24,14 @@ shareTriangle.classList.toggle('turn');
 }
  
 shareLegend.addEventListener('click', handleArrowS);
- 
- 
+
+/*if (shareWrapper2.classList.contains('hidden')){
+    console.log(yeah);
+    shareTriangle.classList.add('turn');
+}else {
+    shareTriangle.classList.remove('turn');
+};*/
+
 //-------- fill-----------
 function handleArrowF(){
 fillWrapper.classList.toggle('hidden');
