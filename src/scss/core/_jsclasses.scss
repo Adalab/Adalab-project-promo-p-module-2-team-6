@@ -81,3 +81,40 @@
         }
       }
     }
+
+    
+    //CAMBIO A BLUE
+    .paletteBlue {
+
+      .card__rectangle {
+        background-color:$dirty-blue;
+      }
+      .card__names{
+        color:$branddark;
+      }
+     
+      .card__icons__container-mobile{
+        border: solid 2px $hospital-green;
+        &__mobile{
+          color:$branddark;
+        }
+      }
+      .card__icons__container-mail{
+        border: solid 2px $hospital-green;
+        &__mail{
+          color:$branddark;
+        }
+      }
+      .card__icons__container-linkedin{
+        border: solid 2px $hospital-green;
+        &__linkedin{
+          color:$branddark;
+        }
+      }
+      .card__icons__container-git{
+        border: solid 2px $hospital-green;
+        &__github{
+          color: $branddark;
+        }
+      }
+    }
