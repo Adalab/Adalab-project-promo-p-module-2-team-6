@@ -61,6 +61,9 @@
   }
 }
 
+.disapear {
+  display: none;
+}
 .done {
   display: flex;
   flex-direction: column;
@@ -106,7 +109,7 @@
       font-size: 14px;
     }
   }
-  .disapear {
-    display: none;
-  }
+
 }
+
+
