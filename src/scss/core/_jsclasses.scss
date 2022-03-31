@@ -8,5 +8,76 @@
     transform: rotate(180deg);
   }
 
-
   //CAMBIOS DE COLOR DE PREVIEW - JS
+
+  //CAMBIO A ROJO
+  .paletteRed {
+
+    .card__rectangle {
+      background-color: $rusty-red;
+    }
+    .card__names{
+      color: $dried-blood;
+    }
+   
+    .card__icons__container-mobile{
+      border: solid 2px $tomato;
+      &__mobile{
+        color:$dried-blood;
+      }
+    }
+    .card__icons__container-mail{
+      border: solid 2px $tomato;
+      &__mail{
+        color:$dried-blood;
+      }
+    }
+    .card__icons__container-linkedin{
+      border: solid 2px $tomato;
+      &__linkedin{
+        color:$dried-blood;
+      }
+    }
+    .card__icons__container-git{
+      border: solid 2px $tomato;
+      &__github{
+        color: $dried-blood;
+      }
+    }
+  }
+
+    //CAMBIO A MIX
+    .paletteMix {
+
+      .card__rectangle {
+        background-color: $faded-orange;
+      }
+      .card__names{
+        color:$slate;
+      }
+     
+      .card__icons__container-mobile{
+        border: solid 2px $light-grey-blue;
+        &__mobile{
+          color:$slate;
+        }
+      }
+      .card__icons__container-mail{
+        border: solid 2px $light-grey-blue;
+        &__mail{
+          color:$slate;
+        }
+      }
+      .card__icons__container-linkedin{
+        border: solid 2px $light-grey-blue;
+        &__linkedin{
+          color:$slate;
+        }
+      }
+      .card__icons__container-git{
+        border: solid 2px $light-grey-blue;
+        &__github{
+          color: $slate;
+        }
+      }
+    }
