@@ -37,6 +37,9 @@
   display: flex;
   gap: 20px;
 }
+.hidden-input {
+  display:none;
+}
 
 .box-text {
   height: 30px;
@@ -57,4 +60,8 @@
   height: 30px;
   border: solid 1px $brandmedium;
   margin-top: 7px;
+ background-image: url("../images/profile.jpg");
+  background-size: cover;
+  background-position: center;
+  overflow-y: hidden;
 }

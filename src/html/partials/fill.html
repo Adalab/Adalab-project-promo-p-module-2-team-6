@@ -1,5 +1,5 @@
 <fieldset class="filled">
-  <div class="filled__legend js-fill_legend">
+  <div class="filled__legend js-fill_legend" title="pincha aqui">
     <i class="fa-regular fa-keyboard icon"></i>
     <p class="filled__title-filled">rellena</p>
     <i class="fa-solid fa-angle-up collapsible js-fill__triangle"></i>
@@ -26,9 +26,17 @@
     <label class="image filled-text" for="image">Imagen de perfil</label>
 
     <div class="filled-button">
-      <label for="image" class="input-orange box-text">Añadir imagen</label>
+      <label for="image" class="input-orange box-text js__profile-trigger"
+        >Añadir imagen</label
+      >
+      <input
+        type="file"
+        name
+        id="image"
+        class="hidden-input js__profile-upload-btn"
+      />
 
-      <span class="box-image"></span>
+      <span class="box-image js__profile-preview"></span>
     </div>
 
     <label class="emailadress filled-text" for="email">Email</label>
