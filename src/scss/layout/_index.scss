@@ -8,6 +8,7 @@
   text-align: center;
   justify-content: center;
   align-items: center;
+
   @include tablet {
     min-height: 552px;
   }
@@ -24,6 +25,7 @@
     width: 250px;
     @include tablet {
       width: 60%;
+      
     }
   }
   &__title {
@@ -81,6 +83,7 @@
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
+
   @include tablet {
     /* position: absolute;
     bottom: 0; */
@@ -97,4 +100,5 @@
   width: auto;
   /* HE TENIDO QUE HACER UN TRANSFORM... */
   transform: translateY(15px);
+ 
 }
