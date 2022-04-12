@@ -8,6 +8,9 @@ const iconMail = document.querySelector(".js_iconMail");
 const iconLinkedIn = document.querySelector(".js_iconLinkedIn");
 const iconGit = document.querySelector(".js_iconGit");
 const buttonShare = document.querySelector(".js-buttonShare");
+const shareLink = document.querySelector(".js-shareLink");
+const shareLinkWrapper = document.querySelector(".js-shareLinkWrapper");
+const shareTwitter = document.querySelector(".js-shareTwitter");
 
 const data = {
   palette: 1,
@@ -84,7 +87,15 @@ function handleButtonShare(event) {
     headers: { "Content-Type": "application/json" },
   })
     .then((response) => response.json())
-    .then((data) => {})
+    .then((result) => {
+      if (result.success) {
+        shareLink.href = result.cardURL;
+        shareLinkWrapper.classList.remove("disapear");
+        shareTwitter.innerHTML += `<a class="twitter" href="https://twitter.com/intent/tweet?text=Tarjeta%20de%20contacto%20equipo%206%20&url=${result.cardURL}&hashtags=equipo6" target="_blank"> <i class="fa-brands fa-twitter done__button-twitter__icon"></i>
+          Compartir en twitter
+        </a>`;
+      }
+    })
     .catch((error) => console.log(`Ha sucedido un error: ${error}`));
 }
 
