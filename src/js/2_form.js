@@ -7,77 +7,86 @@ const iconMobile = document.querySelector(".js_iconMobile");
 const iconMail = document.querySelector(".js_iconMail");
 const iconLinkedIn = document.querySelector(".js_iconLinkedIn");
 const iconGit = document.querySelector(".js_iconGit");
+const buttonShare = document.querySelector(".js-buttonShare");
 
 const data = {
   palette: 1,
   name: "",
-  position: "",
+  job: "",
   email: "",
-  phonenumber: "",
-  link: "",
-  git: "",
+  phone: "",
+  linkedin: "",
+  github: "",
   photo: "",
 };
 
 function getDataInput(event) {
-  console.log("typing");
   const elementWhereUserIsTyping = event.target;
   if (elementWhereUserIsTyping.id === "name") {
     data.name = elementWhereUserIsTyping.value;
-    console.log(data.name);
-  } else if (elementWhereUserIsTyping.id === "position") {
-    data.position = elementWhereUserIsTyping.value;
+  } else if (elementWhereUserIsTyping.id === "job") {
+    data.job = elementWhereUserIsTyping.value;
   } else if (elementWhereUserIsTyping.id === "email") {
     data.email = elementWhereUserIsTyping.value;
-  } else if (elementWhereUserIsTyping.id === "phonenumber") {
-    data.phonenumber = elementWhereUserIsTyping.value;
-  } else if (elementWhereUserIsTyping.id === "link") {
-    data.link = elementWhereUserIsTyping.value;
-  } else if (elementWhereUserIsTyping.id === "git") {
-    data.git = elementWhereUserIsTyping.value;
+  } else if (elementWhereUserIsTyping.id === "phone") {
+    data.phone = elementWhereUserIsTyping.value;
+  } else if (elementWhereUserIsTyping.id === "linkedin") {
+    data.linkedin = elementWhereUserIsTyping.value;
+  } else if (elementWhereUserIsTyping.id === "github") {
+    data.github = elementWhereUserIsTyping.value;
   }
   renderPreview();
 }
 
 function renderPreview() {
-  console.log("voy a renderizar");
-  console.log(data.email);
   if (data.name === "") {
     namesCard.innerHTML = "nombre y apellido";
   } else {
     namesCard.innerHTML = data.name;
   }
 
-  if (data.position === "") {
+  if (data.job === "") {
     professionCard.innerHTML = "profesión";
   } else {
-    professionCard.innerHTML = data.position;
+    professionCard.innerHTML = data.job;
   }
 
   if (data.email === "") {
-    console.log("POR AQUÍ NO PASO");
     iconMail.href = "mailto:hola@adalab.es";
   } else {
     iconMail.href = `mailto: ${data.email}`;
   }
 
-  if (data.git === "") {
+  if (data.github === "") {
     iconGit.href = "https://github.com/Adalab/";
   } else {
-    iconGit.href = `https://github.com/${data.git}/ `;
+    iconGit.href = `https://github.com/${data.github}/ `;
   }
 
-  if (data.link === "") {
+  if (data.linkedin === "") {
     iconLinkedIn.href =
       "https://www.linkedin.com/school/adalab/?originalSubdomain=es";
   } else {
-    iconLinkedIn.href = `https://es.linkedin.com/in/${data.link} `;
+    iconLinkedIn.href = `https://es.linkedin.com/in/${data.linkedin} `;
   }
-  if (data.phonenumber === "") {
+  if (data.phone === "") {
     iconMobile.href = "tel:666666666";
   } else {
-    iconMobile.href = `tel: ${data.phonenumber}`;
+    iconMobile.href = `tel: ${data.phone}`;
   }
 }
 
+function handleButtonShare(event) {
+  event.preventDefault();
+  fetch("https://awesome-profile-cards.herokuapp.com/card", {
+    method: "POST",
+    body: JSON.stringify(data),
+    headers: { "Content-Type": "application/json" },
+  })
+    .then((response) => response.json())
+    .then((data) => {})
+    .catch((error) => console.log(`Ha sucedido un error: ${error}`));
+}
+
+buttonShare.addEventListener("click", handleButtonShare);
 formAllInput.addEventListener("keyup", getDataInput);
