@@ -43,7 +43,7 @@ function getDataInput(event) {
 
 function renderPreview() {
   if (data.name === "") {
-    namesCard.innerHTML = "nombre y apellido";
+    namesCard.innerHTML = "nombre apellido";
   } else {
     namesCard.innerHTML = data.name;
   }
