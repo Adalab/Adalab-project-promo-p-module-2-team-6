@@ -91,7 +91,7 @@ function handleButtonShare(event) {
       if (result.success) {
         shareLink.href = result.cardURL;
         shareLinkWrapper.classList.remove("disapear");
-        shareTwitter.innerHTML += `<a class="twitter" href="https://twitter.com/intent/tweet?text=Tarjeta%20de%20contacto%20equipo%206%20&url=${result.cardURL}&hashtags=equipo6" target="_blank"> <i class="fa-brands fa-twitter done__button-twitter__icon"></i>
+        shareTwitter.innerHTML += `<a class="done__button-twitter__content" title="compartir en twitter" href="https://twitter.com/intent/tweet?text=Tarjeta%20de%20contacto%20equipo%206%20&url=${result.cardURL}&hashtags=equipo6" target="_blank"> <i class="fa-brands fa-twitter done__button-twitter__icon"></i>
           Compartir en twitter
         </a>`;
       }

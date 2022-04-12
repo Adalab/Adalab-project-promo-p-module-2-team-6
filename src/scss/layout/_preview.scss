@@ -21,7 +21,7 @@
   text-transform: uppercase;
   font-size: 12px;
   margin-top: 38px;
-
+  cursor: pointer;
   position: relative;
   left: -83px;
 
@@ -47,7 +47,6 @@
     margin-left: 0;
   }
 
-
   &__names {
     max-width: 220px;
     overflow-wrap: break-word;
@@ -70,7 +69,6 @@
     padding-bottom: 10px;
   }
 
-
   &__container-img {
     width: 240px;
     height: 200px;
@@ -82,7 +80,6 @@
   &__icons {
     color: $branddark;
     display: flex;
-    
 
     &__container-mobile {
       width: 32px;
@@ -143,6 +140,3 @@
     }
   }
 }
-
-
-
