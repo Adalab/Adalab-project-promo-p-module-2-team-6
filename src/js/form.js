@@ -7,6 +7,7 @@ const iconMobile = document.querySelector(".js_iconMobile");
 const iconMail = document.querySelector(".js_iconMail");
 const iconLinkedIn = document.querySelector(".js_iconLinkedIn");
 const iconGit = document.querySelector(".js_iconGit");
+const createCardButton = document.querySelector(".js-createCardButton");
 
 const data = {
   palette: 1,
@@ -16,15 +17,13 @@ const data = {
   phonenumber: "",
   link: "",
   git: "",
-  photo: "",
+  /* photo: "", */
 };
 
 function getDataInput(event) {
-  console.log("typing");
   const elementWhereUserIsTyping = event.target;
   if (elementWhereUserIsTyping.id === "name") {
     data.name = elementWhereUserIsTyping.value;
-    console.log(data.name);
   } else if (elementWhereUserIsTyping.id === "position") {
     data.position = elementWhereUserIsTyping.value;
   } else if (elementWhereUserIsTyping.id === "email") {
@@ -40,8 +39,6 @@ function getDataInput(event) {
 }
 
 function renderPreview() {
-  console.log("voy a renderizar");
-  console.log(data.email);
   if (data.name === "") {
     namesCard.innerHTML = "nombre y apellido";
   } else {
@@ -55,7 +52,6 @@ function renderPreview() {
   }
 
   if (data.email === "") {
-    console.log("POR AQUÍ NO PASO");
     iconMail.href = "mailto:hola@adalab.es";
   } else {
     iconMail.href = `mailto: ${data.email}`;
@@ -80,4 +76,23 @@ function renderPreview() {
   }
 }
 
+function sendForm() {
+  const url = "https://awesome-profile-cards.herokuapp.com/card";
+  console.log("he clickado");
+  console.log(data);
+  /*  if (data.name !== "") { */
+  fetch(url, {
+    method: "POST",
+    body: JSON.stringify(data),
+    headers: {
+      "content-type": "application/json",
+    },
+  })
+    .then((response) => response.json())
+    .then((data) => console.log(data))
+    .catch((error) => console.log(`Ha sucedido un error: ${error}`));
+  /* } */
+}
+
 formAllInput.addEventListener("keyup", getDataInput);
+createCardButton.addEventListener("click", sendForm);
