@@ -88,6 +88,7 @@ function handleButtonShare(event) {
   })
     .then((response) => response.json())
     .then((result) => {
+      shareTwitter.innerHTML = "";
       if (result.success) {
         shareLink.href = result.cardURL;
         shareLinkWrapper.classList.remove("disapear");

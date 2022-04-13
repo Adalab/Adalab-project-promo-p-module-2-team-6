@@ -10,6 +10,15 @@
   bottom: 0;
   background-color: $contentwhite;
 
+  &__img {
+    display: none;
+    @include tablet {
+      display: block;
+      height: 40px;
+      margin: 0px 0.625rem 0px 2.5rem;
+    }
+  }
+
   .h2 {
     text-align: center;
     width: 100%;
@@ -17,7 +26,6 @@
     font-size: 0.875rem;
     @include tablet {
       text-align: left;
-      padding-left: 2.5rem;
     }
   }
   .adalab {
