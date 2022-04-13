@@ -1,10 +1,5 @@
 "use strict";
 
-const fr = new FileReader();
-const fileField = document.querySelector(".js__profile-upload-btn");
-const profileImage = document.querySelector(".js__profile-image");
-const profilePreview = document.querySelector(".js__profile-preview");
-
 /**
  * Recoge el archivo añadido al campo de tipo "file"
  * y lo carga en nuestro objeto FileReader para que
@@ -24,14 +19,16 @@ function getImage(e) {
  * trabajar con ellos ;)
  */
 function writeImage() {
+  const pathimg = fr.result;
   /* En la propiedad `result` de nuestro FR se almacena
    * el resultado. Ese resultado de procesar el fichero que hemos cargado
    * podemos pasarlo como background a la imagen de perfil y a la vista previa
    * de nuestro componente.
    */
-  profileImage.style.backgroundImage = `url(${fr.result})`;
-  profilePreview.style.backgroundImage = `url(${fr.result})`;
-  data.photo = fr.result;
+  profileImage.style.backgroundImage = `url(${pathimg})`;
+  profilePreview.style.backgroundImage = `url(${pathimg})`;
+  data.photo = pathimg;
+  copyInLocalStorage();
 }
 
 /**
@@ -48,3 +45,8 @@ function fakeFileClick() {
  * - al campo oculto para cuando cambie su value
  */
 fileField.addEventListener("change", getImage);
+
+function writeImageLocal() {
+  profileImage.style.backgroundImage = `url(${data.photo})`;
+  profilePreview.style.backgroundImage = `url(${data.photo})`;
+}

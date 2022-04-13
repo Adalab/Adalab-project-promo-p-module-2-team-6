@@ -11,8 +11,14 @@ const buttonShare = document.querySelector(".js-buttonShare");
 const shareLink = document.querySelector(".js-shareLink");
 const shareLinkWrapper = document.querySelector(".js-shareLinkWrapper");
 const shareTwitter = document.querySelector(".js-shareTwitter");
+const inputNames = document.querySelector(".js-inputNames");
+const inputProfession = document.querySelector(".js-inputProfession");
+const inputemail = document.querySelector(".js-inputemail");
+const inputphone = document.querySelector(".js-inputphone");
+const inputlinkedin = document.querySelector(".js-inputlinkedin");
+const inputgit = document.querySelector(".js-inputgit");
 
-const data = {
+let data = {
   palette: 1,
   name: "",
   job: "",
@@ -38,6 +44,8 @@ function getDataInput(event) {
   } else if (elementWhereUserIsTyping.id === "github") {
     data.github = elementWhereUserIsTyping.value;
   }
+
+  console.log(data);
   renderPreview();
 }
 
@@ -77,6 +85,7 @@ function renderPreview() {
   } else {
     iconMobile.href = `tel: ${data.phone}`;
   }
+  copyInLocalStorage();
 }
 
 function handleButtonShare(event) {
@@ -99,5 +108,47 @@ function handleButtonShare(event) {
     .catch((error) => console.log(`Ha sucedido un error: ${error}`));
 }
 
+//Guardo en Local Storage el array de data convertido a string
+function copyInLocalStorage() {
+  const stringData = JSON.stringify(data);
+  localStorage.setItem("data", stringData);
+  getDataInput();
+}
+
+//saco de Local Storage el string de data y lo convierto a array
+function getLocalStorage() {
+  const localStorageForm = localStorage.getItem("data");
+
+  //Si está guardado en LS llamo a la funcion
+  if (localStorageForm !== null) {
+    const userDataLocal = JSON.parse(localStorageForm);
+    data = userDataLocal;
+    if (data.name !== "") {
+      inputNames.value = data.name;
+      renderPreview(data);
+    }
+    if (data.job !== "") {
+      inputProfession.value = data.job;
+    }
+    if (data.email !== "") {
+      inputemail.value = data.email;
+    }
+    if (data.phone !== "") {
+      inputphone.value = data.phone;
+    }
+    if (data.linkedin !== "") {
+      inputlinkedin.value = data.linkedin;
+    }
+    if (data.github !== "") {
+      inputgit.value = data.github;
+    }
+    console.log("voy a mostrar data");
+    console.log(data);
+  }
+}
+
+//Llamo a la info guardada en LS y que la pinte, cuando cargue la página
+
+getLocalStorage();
 buttonShare.addEventListener("click", handleButtonShare);
 formAllInput.addEventListener("keyup", getDataInput);

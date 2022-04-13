@@ -41,6 +41,7 @@ function resetCard() {
   resetEmail.href = "";
   resetLikendin.href = "";
   resetGitHub.href = "";
+  data = {};
 }
 
 //resetear form
