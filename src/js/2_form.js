@@ -11,12 +11,14 @@ const buttonShare = document.querySelector('.js-buttonShare');
 const shareLink = document.querySelector('.js-shareLink');
 const shareLinkWrapper = document.querySelector('.js-shareLinkWrapper');
 const shareTwitter = document.querySelector('.js-shareTwitter');
+let inputName = document.querySelector('.js-inputName');
 
-const data = {
+let data = {
   palette: 1,
   name: '',
   job: '',
   email: '',
+
   phone: '',
   linkedin: '',
   github: '',
@@ -97,7 +99,35 @@ function handleButtonShare(event) {
       }
     })
     .catch((error) => console.log(`Ha sucedido un error: ${error}`));
+  copyInLocalStorage();
 }
+
+//Guardo en Local Storage el array de data convertido a string
+function copyInLocalStorage() {
+  const stringData = JSON.stringify(data);
+  localStorage.setItem('data', stringData);
+}
+
+//saco de Local Storage el string de data y lo convierto a array
+/*function getLocalStorage() {
+  const localStorageForm = localStorage.getItem('data');
+
+  //Si está guardado en LS llamo a la funcion
+  if (localStorageForm !== null) {
+    console.log('uno');
+    data = JSON.parse(localStorageForm);
+    if (data.name !== null) {
+      data.name = inputName.value;
+      console.log('dos');
+      console.log(data);
+      console.log(inputName.value);
+    }
+  }
+}
+
+//Llamo a la info guardada en LS y que la pinte, cuando cargue la página
+
+getLocalStorage();*/
 
 buttonShare.addEventListener('click', handleButtonShare);
 formAllInput.addEventListener('keyup', getDataInput);
