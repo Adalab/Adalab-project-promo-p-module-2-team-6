@@ -81,3 +81,25 @@ function renderPreview() {
 }
 
 formAllInput.addEventListener("keyup", getDataInput);
+
+// Enviar información al servidor del formulario
+
+const prueba = {
+
+  palette: 1,
+  name: "Lorena",
+  position: "Adalaber",
+  email: "lorenagomezperez@gmail,com",
+  phonenumber: "600757306",
+  link: "lorenagomez@linkedin.com",
+  git: "@lorena",
+  
+};
+
+fetch('https://awesome-profile-cards.herokuapp.com/card', {
+  method: 'POST',
+  body: JSON.stringify(prueba),
+  headers: { 'Content-Type': 'application/json',
+  },
+}).then ((response)=>response.json())
+  .then ((cardData) =>console.log(cardData));
