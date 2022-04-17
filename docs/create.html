@@ -30,7 +30,7 @@
 
     <div class="createwrapper">
       <article class="preview">
-        <button class="reset js-resetButton" type="reset">
+        <button class="reset js-resetButton" type="reset" title="Reset">
           <i class="fa-solid fa-trash-can reset__can"></i>Reset
         </button>
 
@@ -44,12 +44,12 @@
 
           <div class="card__container-img js__profile-image"></div>
           <nav class="card__icons">
-            <!--<button class="card__icons__button-mobile js_button-mobile">
-              <i class="fa-solid fa-mobile-screen-button"></i>
-            </button>-->
-
             <div class="card__icons__container-mobile js_containerMobile">
-              <a class="js_iconMobile js_resetPhone" phone="" href="" target="_blank"
+              <a
+                class="js_iconMobile js_resetPhone"
+                title="llamar por teléfono"
+                href=""
+                target="_blank"
                 ><i
                   class="fa-solid fa-mobile-screen-button class card__icons__container-mobile__mobile"
                 ></i
@@ -59,6 +59,7 @@
             <div class="card__icons__container-mail js_containerMail">
               <a
                 class="js_iconMail js_resetMail"
+                title="enviar email"
                 href="mailto:hola@adalab.es"
                 target="_blank"
                 ><i class="fa-solid fa-envelope card__icons__container-mail__mail"></i
@@ -69,6 +70,7 @@
                 class="js_iconLinkedIn js_resetLinkedin"
                 href="https://www.linkedin.com/school/adalab/?originalSubdomain=es"
                 target="_blank"
+                title="ir a perfil de Linkedin"
                 ><i
                   class="fa-brands fa-linkedin-in card__icons__container-linkedin__linkedin"
                 ></i
@@ -79,6 +81,7 @@
                 class="js_iconGit js_resetGithub"
                 href="https://github.com/Adalab/"
                 target="_blank"
+                title="ir a perfil de Github"
                 ><i
                   class="fa-brands fa-github-alt card__icons__container-git__github"
                 ></i
@@ -105,6 +108,7 @@
                 id="palette"
                 type="radio"
                 name="palette"
+                checked="selected"
               />
               <div class="blue1"></div>
               <div class="blue1__blue2"></div>
@@ -135,6 +139,30 @@
               <div class="mix1__mix2"></div>
               <div class="mix1__mix3"></div>
             </div>
+            <!-- palette colors Mix team -->
+            <div class="colors js_colorsMixTeam">
+              <input
+                class="js_button_paletteMixteam"
+                id="palette"
+                type="radio"
+                name="palette"
+              />
+              <div class="mixteam1"></div>
+              <div class="mixteam1__mixteam2"></div>
+              <div class="mixteam1__mixteam3"></div>
+            </div>
+
+            <!--     <div class="colors js_colorsMixTeamPink">
+              <input
+                class="js_button_paletteMixteamPink"
+                id="palette"
+                type="radio"
+                name="palette"
+              />
+              <div class="mixteampink1"></div>
+              <div class="mixteampink1__mixteampink2"></div>
+              <div class="mixteampink1__mixteampink3"></div>
+            </div> -->
           </div>
         </fieldset>
 
@@ -157,7 +185,7 @@
             <label class="job filled-text" for="job">Puesto</label>
             <input
               class="box-text js-inputProfession js_resetJob"
-              id="position"
+              id="job"
               type="text"
               name="job"
               placeholder="Ej: Front-end unicorn"
@@ -191,7 +219,7 @@
             <label class="phone filled-text" for="phone">Teléfono</label>
             <input
               class="box-text js_resetPhone"
-              id="phonenumber"
+              id="phone"
               type="tel"
               name="phone"
               placeholder="Ej: 555-55-55-55"
@@ -200,7 +228,7 @@
             <label class="linkedin filled-text" for="linkedin">Linkedin</label>
             <input
               class="box-text js_resetLinkedin"
-              id="link"
+              id="linkedin"
               type="text"
               name="linkedin"
               placeholder="Ej: linkedin.com/in/sally.hill "
@@ -209,7 +237,7 @@
             <label class="github filled-text" for="github">Github</label>
             <input
               class="box-tex js_resetGithub"
-              id="git"
+              id="github"
               type="text"
               name="name"
               placeholder="Ej: @sally-hill"
@@ -228,21 +256,28 @@
               ></i>
             </div>
             <div class="button-container hidden js-share__wrapper">
-              <button class="button-container__create">
+              <button class="button-container__create js-buttonShare">
                 <i class="fa-solid fa-address-card button-container__create__icon"></i>
-                <p class="button-container__create__title">Crear tarjeta</p>
+                <p class="button-container__create__title" title="crear tarjeta">
+                  Crear tarjeta
+                </p>
               </button>
             </div>
           </div>
 
-          <div class="disapear">
+          <div class="disapear js-shareLinkWrapper">
             <div class="done">
               <p class="done__title">La tarjeta ha sido creada:</p>
-              <a class="done__link" href="">https://link tarjeta creada</a>
-              <button class="done__button-twitter">
-                <i class="fa-brands fa-twitter done__button-twitter__icon"></i>
-                <p class="done__button-twitter__content">Compartir en twitter</p>
-              </button>
+              <a
+                class="done__link js-shareLink"
+                title="Ir al enlace de la tarjeta"
+                href=""
+                >https://link tarjeta creada</a
+              >
+              <button
+                class="done__button-twitter js-shareTwitter"
+                title="publicar la tarjeta en twitter"
+              ></button>
             </div>
           </div>
         </fieldset>
@@ -252,7 +287,8 @@
 
     <footer>
       <div class="footer">
-        <h2 class="h2">Awesome profile-cards @2018</h2>
+        <img class="footer__img" src="./assets/images/logo-team.png" alt="" />
+        <h2 class="h2">Awesome profile-cards @2018 Equipo 6</h2>
 
         <a title="adalab" href="https://www.adalab.es/"
           ><img
